@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albumusic.com</title>
+    <link rel="stylesheet" href="wutiwant.css">
+</head>
+<body style="background-image: url(https://i.pinimg.com/originals/9b/34/76/9b347647af86d2302a75e84930d21ff3.jpg);background-size:cover">
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="header-top">
+                <h1>Albummusic.com</h1>
+                <p>Buy your favorite personality</p>
+                <marquee class="contact-info">Tel: 043.995.4055 | gmail:Banalbum247@gmail.com</marquee>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="kafka.html">Trang Chủ</a></li>
+                <li><a href="kafka2.html">Giới thiệu</a></li>
+                <li><a href="kafka3.html">Dịch vụ</a></li>
+                <li><a href="kafka4.html">Sản phẩm</a></li>
+                <li><a href="kafka5.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Section -->
+        <main>
+            <!-- Sidebar for Product Categories -->
+            <aside class="sidebar">
+                <h3>DANH MỤC SẢN PHẨM</h3>
+                <ul>
+                    <li>
+                        <h3>Album Việt</h3>
+                        <ul>
+                            <li><a href="punpun.html">Album ngọt</a></li>
+                            <li><a href="punpun2.html">Album Mối</a></li>
+                            <li><a href="punpun3.html">Album Nam thế giới</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Album nước ngoài</h3>
+                        <ul>
+                            <li><a href="punpun4.html">Album Crystal castle</a></li>
+                            <li><a href="punpun5.html">Album Mybloodyvalentine</a></li>
+                            <li><a href="punpun6.html">Album Radiohead</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Product Display Section -->
+            <section class="products">
+                <h3 style="color:aliceblue">SẢN PHẨM MỚI NHẤT</h3>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="data:image/jpeg;base64,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" alt="Albumcarseatresthead">
+                        <p>Car seat headrest twin fantasy</p>
+                        <p>120.000 đ</p>
+                        <button>Mua hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/42/d7/fa/42d7fa35-fcdc-4715-ed99-79d699285674/859737969957.png/316x316bb.webp" alt="race">
+                        <p>Race</p>
+                        <p>120.000 đ</p>
+                        <button>Mua hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://th.bing.com/th/id/OIP.L_P75aLBJMLKOj0pUcFMbQHaHa?rs=1&pid=ImgDetMain" alt="tvgirl">
+                        <p>TV girl</p>
+                        <p>120.000 đ</p>
+                        <button>Mua hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://townsquare.media/site/295/files/2012/06/nirvana_nevermind_cover-625.jpg?w=780&q=75" alt="Nirvanna">
+                        <p>Nirvanna</p>
+                        <p>120.000 đ</p>
+                        <button>Mua hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://i.ebayimg.com/00/s/MTYwMFgxNjAw/z/w0UAAOSwBo5ko1JU/$_57.JPG?set_id=8800005007" alt="Deaftones">
+                        <p>Deaftones</p>
+                        <p>120.000 đ</p>
+                        <button>Mua hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://f4.bcbits.com/img/a0571397198_65" alt="Mitski">
+                        <p>Mitski</p>
+                        <p>120.000 đ</p>
+                        <button>Mua hàng</button>
+                    </div>
+                    
+                </div>
+                </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>© Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh</p>
+        </footer>
+    </div>
+</body>
+</html>

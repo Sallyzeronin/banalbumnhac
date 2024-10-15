@@ -1,0 +1,175 @@
+/* Apply box-sizing to all elements for better padding and margin handling */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Settings */
+.container {
+    width: 95%; 
+    max-width: 1600px; /* Adjusted for larger screens */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Header Section */
+header {
+    background-image: url(https://i.pinimg.com/originals/61/50/fd/6150fda4a0f860ce153714d62e604dae.jpg);
+    background-size: cover;
+    padding: 20px 0; /* Add more padding */
+    text-align: center;
+}
+
+header .header-top h1 {
+    font-size: 48px; /* Consistent font size */
+    margin: 0;
+    color: white;
+}
+
+header .header-top p {
+    font-size: 24px; /* Increase font size */
+    margin: 5px 0;
+    color: white;
+}
+
+/* Contact Info Section */
+.contact-info {
+    background-color: rgba(0, 0, 0, 0.6); /* Make background more visible */
+    color: white;
+    padding: 10px 0;
+    font-size: 18px; /* Increase font size */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 15px 0; /* More padding for bigger look */
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Better spacing control */
+    margin: 0 20px; /* Increase spacing between menu items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Larger font size */
+}
+
+/* Main Content Section */
+main {
+    display: flex;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    margin-top: 30px; /* Add more space above the main content */
+}
+
+/* Album Container (Initially Hidden) */
+.album-container {
+    display: grid; /* Change to grid to display albums */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Album Box Styling */
+.album-box {
+    color: white;
+    background-color: rgb(53, 53, 53);
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.album-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.album-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.album-box button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.album-box button:hover {
+    background-color: #45a049;
+}
+
+/* Show Albums Button */
+#show-albums {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+#show-albums:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0; /* Add more padding */
+    margin-top: 30px;
+    font-size: 16px; /* Increase footer text size */
+}
+
+/* Style for the message icon */
+.message-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.message-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .album-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .album-container {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}

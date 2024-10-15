@@ -1,0 +1,169 @@
+
+/* Style for the about-box section */
+/* Main Content Section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* To handle padding/margin calculations */
+}
+
+.container {
+    width: 95%; /* Increase from 100% and reduce side margins */
+    max-width: 1600px; /* Adjusted max-width for larger screens */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Header Section */
+header {
+    background-image: url(https://i.pinimg.com/originals/61/50/fd/6150fda4a0f860ce153714d62e604dae.jpg);
+    background-size: cover;
+    padding: 20px 0; /* Add more padding */
+    text-align: center;
+}
+
+    header .header-top h1 {
+        font-size: 48px; /* Make the font size bigger */
+        margin: 0;
+        color: white;
+    }
+
+    header .header-top p {
+        font-size: 24px; /* Increase font size */
+        margin: 5px 0;
+        color: white;
+    }
+
+.contact-info {
+    background-color: rgba(0, 0, 0, 0.6); /* Make background more visible */
+    color: white;
+    padding: 10px 0;
+    font-size: 18px; /* Increase font size */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 15px 0; /* More padding for bigger look */
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline-block; /* Better spacing control */
+        margin: 0 20px; /* Increase spacing between menu items */
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px; /* Larger font size */
+        }
+
+/* Main Content Section */
+main {
+    display: flex;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    margin-top: 30px; /* Add more space above the main content */
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #808080;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual depth */
+}
+
+    .sidebar h3 {
+        font-size: 22px; /* Increase size */
+        margin-bottom: 15px;
+    }
+
+    .sidebar ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+        .sidebar ul li {
+            font-size: 18px; /* Increase font size */
+            margin-bottom: 10px;
+        }
+
+            .sidebar ul li ul li {
+                font-size: 16px;
+                margin-left: 10px;
+            }
+
+            .about-box {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-box h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-box p, .about-box ul {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-box ul {
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* Style for the footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+/* Style for the message icon */
+.message-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.message-icon img {
+    width: 30px;
+    height: 30px;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0; /* Add more padding */
+    margin-top: 30px;
+    font-size: 16px; /* Increase footer text size */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sidebar, .products {
+        width: 100%; /* Make sidebar and products stack on smaller screens */
+    }
+
+    .product-item {
+        width: 100%; /* Make products take full width on smaller screens */
+    }
+}
